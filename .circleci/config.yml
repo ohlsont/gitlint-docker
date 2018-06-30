@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+        - image: hink/gitlint-docker
+    steps:
+      - checkout
+      - run: gitlint install-hook
+      - run: gitlint

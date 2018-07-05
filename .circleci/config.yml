@@ -5,5 +5,4 @@ jobs:
         - image: hink/gitlint-docker
     steps:
       - checkout
-      - run: gitlint install-hook
       - run: gitlint
